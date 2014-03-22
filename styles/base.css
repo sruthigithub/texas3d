@@ -94,3 +94,34 @@ body {
         padding: 0;
     }
 }
+
+body > .container {
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 60px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer {
+    background-color: #F5F5F5;
+    bottom: 0;
+    height: 60px;
+    position: absolute;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.footer .container .text-muted {
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    color: #999999;
+}
