@@ -1,6 +1,7 @@
 body { 
-    padding-top: 100px; 
     min-width: 480px;
+    font-size: 20px;
+    line-height: 40px;
 }
 
 .navbar-default {
@@ -60,7 +61,56 @@ body {
     color: #FFFFFF;
 }
 
- @media (max-width: 768px) {
+ 
+
+body > .container {
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 100px; 
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer {
+    background-color: #F5F5F5;
+    height: 60px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.footer .container .text-muted {
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    color: #999999;
+}
+
+.camera_wrap {
+    padding-top: 10px;
+}
+
+.carouselContainer {
+    height: 400px;
+}
+.page-header h1{
+    color: #E71C37;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.page-header {
+    border: none;
+}
+
+@media (max-width: 768px) {
     .navbar-default .navbar-brand {
         padding-top: 15px;
     }
@@ -93,35 +143,15 @@ body {
     .nav > li > a {
         padding: 0;
     }
-}
-
-body > .container {
-    padding-bottom: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 60px;
-}
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.footer {
-    background-color: #F5F5F5;
-    bottom: 0;
-    height: 60px;
-    position: absolute;
-    width: 100%;
-    text-transform: uppercase;
-}
-
-.footer .container .text-muted {
-    margin-bottom: 20px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 20px;
-    color: #999999;
+    
+    body > .container {
+        padding-bottom: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 40px; 
+    }
+    
+    .carouselContainer {
+        height: 200px;
+    }
 }
