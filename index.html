@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="./styles/base.css">
         <link rel="stylesheet" href="./3rdparty/camerajs/css/camera.css">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./3rdparty/Glisse/glisse.css" />
+        <link rel="stylesheet" href="./styles/gallery.css" />
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -20,7 +22,7 @@
           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body>
+    <body data-spy="scroll">
         <header>
             <nav class="navbar navbar-default navbar-fixed-top navigation" role="navigation">
               <div class="container">
@@ -39,16 +41,16 @@
                 <div id="navbar" class="collapse navbar-collapse">
                   <ul class="nav navbar-nav navbar-right">
                     <li class="active">
-                        <a class="" href="#">ABOUT</a>
+                        <a class="" href="#about">ABOUT</a>
                     </li>
     				<li>
-    				    <a class="" href="#">WORK</a>
+    				    <a class="" href="#work">WORK</a>
     				</li>
     				<li>
-    				    <a class="" href="#">SERVICES</a>
+    				    <a class="" href="#services">SERVICES</a>
     			    </li>
     				<li>
-    				    <a class="" href="#">CONNECT</a>
+    				    <a class="" href="#contact">CONNECT</a>
     				</li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
@@ -85,11 +87,65 @@
                 <div class="page-header">
                   <h1>Texas 3D Graphics <small>Architectural Visualization</small></h1>
                 </div>
-                <div class="about-text">
-                    <p>Texas 3D Graphics, LLC, based in Texas, USA, produces architectural visualization, committed to exterior & interior architectural rendering, 3D floor plans, 3D elevations, 3D animations for commercial and residential development projects.</p>
-                    <p>At Texas3D Graphics, LLC we have highly skilled artists with a background in the filed of architecture and construction management. Our artists have an eye for detail with over 10 years of experience &can cater to the needs of each client with unique requirements. Texas3DGraphics, LLC is fast, reliable, and easy to work with.</p>
+                <div class="text-content">
+                    <p>Texas 3D Graphics, LLC, based in Texas, USA, produces architectural visualization, committed to exterior and interior architectural rendering, 3D floor plans, 3D elevations, 3D animations for commercial and residential development projects.</p>
+                    <p>At Texas3D Graphics, LLC we have highly skilled artists with a background in the filed of architecture and construction management. Our artists have an eye for detail with over 10 years of experience and can cater to the needs of each client with unique requirements. Texas3DGraphics, LLC is fast, reliable, and easy to work with.</p>
                     <p>If you are looking for personal, USA based service with attention to detail and quality, from a team of artists who take true pride in this craft, please consider us for your next project.</p>
                 </div>
+            </div>
+            <div id="work">
+                <div class="page-header">
+                  <h1>Gallery</h1>
+                </div>
+                <div>
+                    <ul class="stack" data-count="3">
+                        <li><img src="http://placehold.it/240x160" rel="group1" data-glisse-big="./images/AirlineFinal.jpg" class="tl" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit"></li>
+                        <li><img src="http://placehold.it/240x160" rel="group1" data-glisse-big="./images/AmericanWheel.jpg" class="tl" title="Cum sociis natoque penatibus et magnis"></li>
+                        <li><img src="http://placehold.it/240x160" rel="group1" data-glisse-big="./images/Apartment.jpg" class="tl" title="Nascetur ridiculus mus"></li>
+                    </ul>
+                    <ul class="stack" data-count="1">
+                        <li><img src="http://placehold.it/240x160" rel="group2" data-glisse-big="./images/AirlineFinal.jpg" class="tl" title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit"></li>
+                    </ul>
+                    <ul class="stack" data-count="5">
+                        <li><img src="http://placehold.it/240x160" rel="group3" data-glisse-big="./images/AmericanWheel.jpg" class="tl" title="Cum sociis natoque penatibus et magnis"></li>
+                        <li><img src="http://placehold.it/240x160" rel="group3" data-glisse-big="./images/Apartment.jpg" class="tl" title="Nascetur ridiculus mus"></li>
+                        <li><img src="http://placehold.it/240x160" rel="group3" data-glisse-big="./images/Apartment.jpg" class="tl" title="Nascetur ridiculus mus"></li>
+                        <li><img src="http://placehold.it/240x160" rel="group3" data-glisse-big="./images/Apartment.jpg" class="tl" title="Nascetur ridiculus mus"></li>
+                        <li><img src="http://placehold.it/240x160" rel="group3" data-glisse-big="./images/Apartment.jpg" class="tl" title="Nascetur ridiculus mus"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="services">
+                <div class="page-header">
+                  <h1>Services we offer</h1>
+                </div>
+                <div class="text-content">
+                    <h3>Architectural Visualization</h3>
+                </div>
+            </div>
+            <div id="contact">
+                <div class="page-header">
+                  <h1>Contact Us</h1>
+                </div>
+                <div class="hello-links">
+    				<a href="mailto:info@info.com">
+    				    <i class="fa fa-3x fa-envelope"></i>
+    				    <span class="contact-text">info@info.com</span>
+    				</a>
+    				<div>
+    				    <i class="fa fa-5x fa-mobile"></i>
+    				    <span class="contact-text">(000)-000-0000</span>
+    				</div>
+    				<a target="_blank" href="https://www.google.com/maps/place/23501+Cinco+Ranch+Blvd/@29.7431405,-95.7757401,17z/data=!3m1!4b1!4m2!3m1!1s0x864121263380d9a5:0x65ed98e77042b2f5?hl=en">
+    				    <i class="fa fa-5x fa-map-marker"></i>
+    				    <span class="contact-text">
+        				    <address>
+                                23501 CINCO RANCH BLVD. STE H120, PMB 189 <br/>
+                                KATY, TX 77494
+                            </address>
+                        </span>
+    				</a>
+			    </div>
             </div>
         </section>
         <div style="clear:both; display:block; height:100px"></div>
@@ -103,9 +159,11 @@
         <script src="./3rdparty/camerajs/scripts/jquery.min.js"></script>
         <script src="./3rdparty/camerajs/scripts/jquery.mobile.customized.min.js" type="text/javascript"></script>
         <script src="./3rdparty/camerajs/scripts/jquery.easing.1.3.js" type="text/javascript"></script>
+        
         <!-- Bootstrap -->
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
         <script src="./3rdparty/camerajs/scripts/camera.min.js"></script>
+        <script src="./3rdparty/Glisse/glisse.js"></script>
         <script type="text/javascript">
            jQuery(document).ready(function( $ ) {
                 $('#carousel').camera({
@@ -113,6 +171,16 @@
                     height: '31%',
                     loader: 'bar',
                 });
+                
+                $('body').scrollspy({ target: '.navbar' });
+                
+                $('.tl').glisse({
+                    changeSpeed: 550, 
+                    speed: 500,
+                    effect:'bounce',
+                    fullscreen: true
+                });
+
            });   
         </script>
     </body>
